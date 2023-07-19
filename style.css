@@ -191,6 +191,10 @@
     height: 50%;
 }
 
+.height-80pc{
+    height: 80%;
+}
+
 .height-100pc{
     height: 100%;
 }
@@ -211,6 +215,10 @@
 
 .my-20px{
     margin: 20px 0;
+}
+
+.mt-30px{
+    margin-top: 30px;
 }
 
 .mb-60px{
@@ -243,6 +251,10 @@
 
 .mr-5px{
     margin-right: 5px;
+}
+
+.mr-25px{
+    margin-right: 25px;
 }
 
 .mr-10pc{
@@ -287,6 +299,14 @@
     padding-top: 20px;
 }
 
+.pt-10px{
+    padding-top: 10px;
+}
+
+.pt-5px{
+    padding-top: 5px;
+}
+
 .pt-130px{
     padding-top: 130px;
 }
@@ -307,6 +327,10 @@
     padding-bottom: 10px;
 }
 
+.pb-70px{
+    padding-bottom: 70px;
+}
+
 .px-20px{
     padding: 0 20px;
 }
@@ -317,6 +341,10 @@
 
 .pr-20px{
     padding-right: 20px;
+}
+
+.pl-20px{
+    padding-left: 20px;
 }
 
 /*endregion utility*/
@@ -337,11 +365,17 @@ main{
 .all{
     background-color: var(--bc-all-dark_grey);
     width: calc(100% - 280px);
+    max-height: 100%;
+    overflow: auto;
 }
 
 .all> header{
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.264);
+    width: calc(100% - 297px);
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.407);
 }
 
 .all header .btn{
@@ -352,14 +386,28 @@ main{
     color: white;
 }
 
-.all> main{
-    max-height: calc(100% - 60px);
-}
-
-.all> main .filter{
+.all main .filter{
     padding-top: 10px;
     color: gray;
+    line-height: 30px;
 }
+
+.all main{
+    padding-top: 60px;
+}
+
+.all .card .col{
+    width: calc(90% / 6);
+}
+
+.all .card .col div{
+    color: white;
+}
+
+.all .card .col span{
+    color: grey;
+}
+
 /*endsection all*/
 
 /*endregion main*/
@@ -412,6 +460,13 @@ footer .row .col img{
 /*endregion utility*/
 
 /*startregion main*/
+
+/*startsection all*/
+.all .card .col{
+    width: calc(90% / 3);
+}
+/*endsection all*/
+
 /*endregion main*/
 
 
@@ -464,6 +519,10 @@ footer .row .col img{
     .all{
         width: calc(100% - 30px);
     }
+
+    .all> header{
+        width: calc(100% - 47px);
+    }
     /*endsection all*/
 
     /*endregion main*/
@@ -477,12 +536,17 @@ footer .row .col img{
 @media screen and (max-width:400px){
 
     /*startregion utility*/
-    .dis-none-xs{
-        display: none;
-    }
+    
     /*endregion utility*/
     
     /*startregion main*/
+
+    /*startsection all*/
+    .all .card .col{
+    width: calc(90% / 2);
+    }
+    /*endsection all*/
+
     /*endregion main*/
     
     

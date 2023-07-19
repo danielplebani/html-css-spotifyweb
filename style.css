@@ -170,6 +170,10 @@
     width: 50%;
 }
 
+.width-70pc{
+    width: 70%;
+}
+
 .width-40pc{
     width: 40%;
 }
@@ -310,6 +314,11 @@
 .px-40px{
     padding: 0 40px;
 }
+
+.pr-20px{
+    padding-right: 20px;
+}
+
 /*endregion utility*/
 
 /*startregion main*/
@@ -320,29 +329,39 @@ main{
 /*startsection menu*/
 .menu{
     width: 280px;
-    height: 100%;
     background-color: black;
 }
-
-.all{
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bc-all-dark_grey);
-}
-
-.all> .container header{
-    height: 60px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.264);
-    position: fixed;
-    z-index: 1;
-}
-
-.all> .container main{
-    overflow: auto;
-}
 /*endsection menu*/
+
+/*startsection all*/
+.all{
+    background-color: var(--bc-all-dark_grey);
+    width: calc(100% - 280px);
+}
+
+.all> header{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.264);
+}
+
+.all header .btn{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.all> main{
+    max-height: calc(100% - 60px);
+}
+
+.all> main .filter{
+    padding-top: 10px;
+    color: gray;
+}
+/*endsection all*/
+
 /*endregion main*/
 
 
@@ -387,6 +406,9 @@ footer .row .col img{
 @media screen and (max-width:1100px){
 
 /*startregion utility*/
+.width-70pc-md{
+    width: 70%;
+}
 /*endregion utility*/
 
 /*startregion main*/
@@ -402,6 +424,9 @@ footer .row .col img{
 @media screen and (max-width:800px){
 
     /*startregion utility*/
+    .width-100pc-s{
+        width: 100%;
+    }
     /*endregion utility*/
     
     /*startregion main*/
@@ -415,7 +440,7 @@ footer .row .col img{
 
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:650px){
 
     /*startregion utility*/
     .mr-5px-s{
@@ -431,9 +456,15 @@ footer .row .col img{
 
     /*startsection menu*/
     .menu{
-        width: 50px;
+        width: 30px;
     }
     /*endsection menu*/
+
+    /*startsection all*/
+    .all{
+        width: calc(100% - 30px);
+    }
+    /*endsection all*/
 
     /*endregion main*/
     
@@ -443,9 +474,26 @@ footer .row .col img{
     
 }
 
-@media screen and (max-height:350px){
+@media screen and (max-width:400px){
 
-    .all> .container > header{
+    /*startregion utility*/
+    .dis-none-xs{
+        display: none;
+    }
+    /*endregion utility*/
+    
+    /*startregion main*/
+    /*endregion main*/
+    
+    
+    /*startregion footer*/
+    /*endregion footer*/
+
+}
+
+@media screen and (max-height:400px){
+
+    .all> header{
         display: none;
     }
 

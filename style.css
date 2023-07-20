@@ -261,6 +261,10 @@
     margin-right: 5px;
 }
 
+.mr-15px{
+    margin-right: 15px;
+}
+
 .mr-25px{
     margin-right: 25px;
 }
@@ -368,14 +372,27 @@ main{
     background-color: black;
 }
 
+.sidebar .install{
+    color: gray;
+}
+
 .sidebar .playlist{
     color: grey;
+}
+
+.sidebar .playlist div:hover, .sidebar .playlist li:hover, .sidebar .name .install:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .sidebar .playlist .create_playlist{
     color: black;
     background-color: gray;
     padding: 7px 9px;
+}
+
+.sidebar .playlist .create_playlist:hover{
+    background-color: white;
 }
 
 .sidebar .playlist ul{
@@ -407,6 +424,11 @@ main{
     padding-top: 10px;
     color: gray;
     line-height: 30px;
+}
+
+.all main .filter div:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .all main{
@@ -441,12 +463,25 @@ footer .row{
     height: 100%;
 }
 
-footer .row .col{
-    
+footer .row .col{ 
     color: white;
 }
 
-footer .row .col img{
+footer .row .col1{ 
+    color: gray;
+}
+
+footer .row .col1 i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+footer .row .col1 .name-song:hover{
+    text-decoration: 1px underline gray;
+    cursor: pointer;
+}
+
+footer .row .col1 img{
     height: 40px;
 }
 
@@ -483,26 +518,35 @@ footer .row .col img{
     height: 100%;
     background-color: white;
 }
-
 /*endregion footer*/
 
 
 @media screen and (max-width:1100px){
 
 /*startregion utility*/
-.width-70pc-md{
+.width-70pc-lg{
     width: 70%;
+}
+
+.mr-15px-lg{
+    margin-right: 15px;
+}
+
+.just-cont-flex-start-lg{
+    justify-content: flex-start;
+}
+
+.mb-10px-lg{
+    margin-bottom: 10px;
 }
 /*endregion utility*/
 
 /*startregion main*/
-
 /*startsection all*/
 .all .card .col{
-    width: calc(90% / 3);
+    width: calc(90% / 4);
 }
 /*endsection all*/
-
 /*endregion main*/
 }
 
@@ -510,13 +554,27 @@ footer .row .col img{
 @media screen and (max-width:800px){
 
     /*startregion utility*/
-    .width-100pc-s{
+    .width-100pc-md{
         width: 100%;
     }
-    /*endregion utility*/
-    
-}
 
+    .mr-0-md{
+        margin-right: 0;
+    }
+
+    .mb-10px-md{
+        margin-bottom: 10px;
+    }
+    /*endregion utility*/
+
+    /*startregion main*/
+    /*startsection all*/
+    .all .card .col{
+        width: calc(90% / 3);
+    }
+    /*endsection all*/
+    /*endregion main*/
+}
 
 
 @media screen and (max-width:650px){
@@ -603,6 +661,19 @@ footer .row .col img{
 @media screen and (max-width:400px){
 
     /*startregion utility*/
+    .mr-0-xs{
+        margin-right: 0 ;
+    }
+
+    .mb-10px-xs{
+        margin-bottom: 10px;
+    }
+
+    .just-cont-space-between-xs{
+        justify-content: space-between;
+    }
+
+
     .mr-10px-xs{
         margin-right: 10px;
     }

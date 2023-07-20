@@ -359,6 +359,10 @@
     padding-left: 20px;
 }
 
+.pl-16px{
+    padding-left: 16px;
+}
+
 /*endregion utility*/
 
 /*startregion main*/
@@ -369,6 +373,7 @@ main{
 /*startsection sidebar*/
 .sidebar{
     width: 280px;
+    height: 100%;
     background-color: black;
 }
 
@@ -397,6 +402,12 @@ main{
 
 .sidebar .playlist ul{
     list-style-type: none;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.house{
+    border-left: 4px solid greenyellow;
 }
 /*endsection sidebar*/
 
@@ -418,6 +429,13 @@ main{
     border-radius: 20px;
     padding: 10px 20px;
     color: white;
+    font-size: x-small;
+    transition-duration: 0.1s;
+}
+
+.all header .btn:hover{
+    font-size: medium;
+    padding: 10px 30px;
 }
 
 .all main .filter{
@@ -485,6 +503,14 @@ footer .row .col1 img{
     height: 40px;
 }
 
+footer i:hover{
+    cursor: pointer;
+}
+
+footer .fa-circle-play:hover{
+    font-size: x-large;
+}
+
 .volume{
     width: 20%; 
     height: 3px; 
@@ -499,12 +525,34 @@ footer .row .col1 img{
   
 .whole-line{
     height: 100%;
+    width: 100%;
     background-color: white;
+    position: relative;
+}
+
+.dot{
+    width: 25px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+.volume:hover .dot, .time:hover .dot{
+    display: block;
+}
+
+.volume:hover, .time:hover{
+    cursor: pointer;
+}
+
+.volume:hover .whole-line, .time .volume:hover .whole-line{
+    background-color: greenyellow;
 }
 
 .time .volume{
     width: 60%; 
-    height: 3px; 
+    height: 5px; 
     background-color: grey;  
 }
   
@@ -517,6 +565,11 @@ footer .row .col1 img{
 .time .whole-line{
     height: 100%;
     background-color: white;
+}
+
+.time .whole-line:hover{
+    background-color: greenyellow;
+    cursor: pointer;
 }
 /*endregion footer*/
 
@@ -598,6 +651,10 @@ footer .row .col1 img{
 
     .ml-0-s{
         margin-left: 0;
+    }
+
+    .bor-none-s{
+        border: none;
     }
 
     .pl-6px-s{
@@ -711,10 +768,39 @@ footer .row .col1 img{
     /*endregion footer*/
 }
 
-@media screen and (max-height:400px){
+@media screen and (max-height:700px){
 
-    .all> header{
+    .sidebar .playlist ul{
+        max-height: 200px;
+    }
+
+}
+
+@media screen and (max-height:600px){
+
+    .sidebar .playlist ul{
+        max-height: 150px;
+    }
+
+}
+
+@media screen and (max-height:550px){
+
+    .sidebar .playlist ul{
+        max-height: 100px;
+    }
+
+}
+
+@media screen and (max-height:500px){
+
+    .sidebar .playlist ul{
+        max-height: 50px;
+    }
+
+    .all header{
         display: none;
     }
 
 }
+

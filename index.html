@@ -31,7 +31,69 @@
 
         <div class="container dis-flex height-100pc">
 
-            <section class="menu"></section>
+            <section class="sidebar dis-flex flex-dir-column just-cont-space-between">
+
+                <section class="playlist dis-flex flex-dir-column">
+
+                    <div class="pt-20px pl-20px dis-none-s">
+                        <img src="./img/logo.svg" alt="logo spotify" class="width-50pc">
+                    </div>
+
+                    <div class="pt-10px pl-6px-s pr-4px-s dis-none dis-block-s">
+                        <img src="./img/logo-small.svg" alt="logo spotify">
+                    </div>
+    
+                    <div class="pt-10px pl-20px pl-6px-s">
+                        <i class="fa-solid fa-house fs-large width-10pc"></i>
+                        <span class="fs-small dis-none-s">Home</span>
+                    </div>
+
+                    <div class="pt-10px pl-20px pl-6px-s">
+                        <i class="fa-solid fa-magnifying-glass fs-large width-10pc"></i>
+                        <span class="fs-small dis-none-s">Cerca</span>
+                    </div>
+
+                    <div class="pt-10px pl-20px pl-8px-s">
+                        <i class="fa-solid fa-lines-leaning fs-large width-10pc"></i>
+                        <span class="fs-small dis-none-s">La tua libreria</span>
+                    </div>
+
+
+                    <h4 style="color: white;" class="pt-20px pl-20px dis-none-s">PLAYLIST</h4>
+
+                    <div class="pt-10px pl-20px dis-none-s">
+                        <i class="create_playlist fa-solid fa-plus fs-large"></i>
+                        <span class="fs-small ml-5px">Crea playlist</span>
+                    </div>
+
+                    <ul class="pt-20px pl-20px dis-none-s">
+                        <li class="fs-small">Nome playlist</li>
+                        <li class="fs-small pt-10px">Nome playlist</li>
+                        <li class="fs-small pt-10px">Nome playlist</li>
+                        <li class="fs-small pt-10px">Nome playlist</li>
+                    </ul>
+
+
+                </section>
+
+                <section class="name">
+
+                    <div style="color: gray;" class="pl-20px pb-10px pl-10px-s pb-0-s">
+                        <i class="fa-regular fa-circle-down fs-x-small"></i>
+                        <span class="fs-small dis-none-s">Installa app</span>
+                    </div>
+
+                    <div style="background-color: gray; width: 85%; height: 1px;" class="m-auto dis-none-s"></div>
+
+                    <div style="color: white;" class="pl-20px pt-10px pb-10px dis-flex align-items-center pl-6px-s">
+                        <img style="width: 25px; background-color: gray; border-radius: 50%;" src="./img/profile.svg" class="mr-5px">
+                        <span class="fs-large dis-none-s"><strong>John Dee</strong></span>
+                    </div>
+
+
+                </section>
+
+            </section>
     
             <section class="all">
 
@@ -95,7 +157,7 @@
     
                     </section>
 
-                    <section class="card px-20px mt-30px">
+                    <section class="card px-20px my-30px">
 
                         <div class="mb-30px">
                             <h2 style="color: white;" >Creato per John Dee</h2>
@@ -119,7 +181,7 @@
     
                     </section>
 
-                    <section class="card px-20px mt-30px">
+                    <section class="card pr-20px pl-20px pb-70px">
 
                         <div class="mb-30px">
                             <h2 style="color: white;" >Artisti più popolari</h2>
@@ -143,7 +205,6 @@
     
                     </section>
 
-
                 </main>
 
             </section>
@@ -157,7 +218,7 @@
         <div class="row dis-flex">
             <div class="col width-33pc dis-flex align-items-center">
 
-                <div class="dis-flex align-items-center mr-10pc">
+                <div class="dis-flex align-items-center mr-25px ml-10px mr-10px-xs ml-3px-xs">
                     <img src="./img/sinister.jpeg">
 
                     <div class="ml-10px ml-5px-s">
@@ -166,21 +227,42 @@
                     </div>
                 </div>
 
-                <div class="dis-flex align-items-center">
+                <div class="dis-flex align-items-center flex-dir-column-s  just-cont-center">
                     <i style="color: grey;" class="fa-regular fa-heart     fs-x-small "></i>
 
-                    <i style="color: grey;" class="fa-regular fa-folder ml-10px fs-x-small ml-5px-s"></i>
+                    <i style="color: grey;" class="fa-regular fa-folder ml-10px fs-x-small ml-0-s mt-5px-s"></i>
                 </div>
             </div>
 
-            <div class="col width-33pc"></div>
+            <div class="col width-33pc pt-10px width-52pc-xs">
 
-            <div class="col width-33pc dis-flex align-items-center just-cont-flex-end">
+                <div class="dis-flex align-items-center just-cont-center">
+                    <i class="fa-solid fa-shuffle mr-25px fs-small mr-10px-s"></i>
+                    <i class="fa-solid fa-backward-step mr-25px fs-small mr-10px-s"></i>
+                    <i class="fa-regular fa-circle-play mr-25px fs-large mr-10px-s"></i>
+                    <i class="fa-solid fa-forward-step mr-25px fs-small mr-10px-s"></i>
+                    <i class="fa-solid fa-rotate-right fs-small"></i>
+                </div>
+
+                <div class="time mt-1rem dis-flex align-items-center just-cont-center">
+                    <span class="fs-xx-small mr-5px">0:25</span>
+                    <div class="volume mr-5px">
+                        <div class="power">
+                          <div class="whole-line"></div>
+                        </div>
+                    </div>
+                    <span class="fs-xx-small">4:25</span>
+
+                </div>
+
+            </div>
+
+            <div class="col width-33pc dis-flex align-items-center just-cont-flex-end just-cont-space-between-xs width-15pc-xs">
                 <i class="fa-solid fa-grip-lines fs-xx-small mr-10px mr-5px-s"></i>
                 <i class="fa-solid fa-tv fs-xx-small mr-10px mr-5px-s"></i>
                 <i class="fa-solid fa-volume-high fs-xx-small mr-10px mr-5px-s"></i>
 
-                <div class="volume">
+                <div class="volume mr-5px">
                     <div class="power">
                       <div class="whole-line"></div>
                     </div>
